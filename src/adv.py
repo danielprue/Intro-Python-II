@@ -23,7 +23,7 @@ to north. The smell of gold permeates the air."""),
 chamber! Sadly, it has already been completely emptied by
 earlier adventurers. The only exit is to the south."""),
 
-    'secret chamber': Room("Secret Hideout", """A shadowy corner of the treasure
+    'secret': Room("Secret Hideout", """A shadowy corner of the treasure
 room had a small crevace that led to this enormous hidden
 chamber! At the end of the long rows of mable columns is a
 table with a key. There appear to be no other exits besides
@@ -41,6 +41,8 @@ room['overlook'].s_to = room['foyer']
 room['narrow'].w_to = room['foyer']
 room['narrow'].n_to = room['treasure']
 room['treasure'].s_to = room['narrow']
+room['treasure'].n_to = room['secret']
+room['secret'].s_to = room['treasure']
 
 # Add items to rooms
 

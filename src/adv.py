@@ -22,6 +22,12 @@ to north. The smell of gold permeates the air."""),
     'treasure': Room("Treasure Chamber", """You've found the long-lost treasure
 chamber! Sadly, it has already been completely emptied by
 earlier adventurers. The only exit is to the south."""),
+
+    'secret chamber': Room("Secret Hideout", """A shadowy corner of the treasure
+room had a small crevace that led to this enormous hidden
+chamber! At the end of the long rows of mable columns is a
+table with a key. There appear to be no other exits besides
+the one you entered from.""")
 }
 
 
